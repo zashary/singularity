@@ -6786,17 +6786,6 @@ header {
 .brandName{
     font-size: 40px;
 }
-.ware {
-    margin: 0;
-}
-.wulf {
-/*
-  background: -webkit-linear-gradient(#af1600, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;    
-*/
-    color:  #830000;
-}
 .icon {
     color:  #830000;
     font-size: 25px;
@@ -6832,11 +6821,5 @@ header {
 }
 #something {
     padding: 1%;
-}
-#paw{
-    float:left;
-    margin: 0;
-    height: 45px;
-    width: 45px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
