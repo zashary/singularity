@@ -41,7 +41,7 @@
 
             var page = location.hash.substring(1);
             if ( page == '' ) {
-                load_content("home");
+                load_content("about");
             } else {
                 load_content(page);
             }
@@ -50,7 +50,10 @@
         window.onpopstate = function(event) {
             load_page();
         }
-
+        
+        var elem = document.getElementById("homeThing");
+        
+    
         $(document).ready(function() {
             load_page();
         });
@@ -89,7 +92,7 @@
         </div><!--container-fluid-->
     </header>
 
-<div class="container-fluid">
+<div id="homeThing" class="container-fluid">
     <div class="row">
 
     <div class="col-md-12 hidden-xs">
