@@ -98,7 +98,7 @@ program (e.g. an HPC system's resource manager) naively.
 </p>
 <p>
 Some usage examples of Singularity can be seen as follows:
-<pre>
+<pre class="padPre">
 $ sudo singularity create /tmp/Demo.img
 $ sudo singularity bootstrap /tmp/Demo.img centos.def
 $ sudo singularity exec --writable /tmp/Demo.img yum install xterm
@@ -119,7 +119,7 @@ works through a Singularity container:
 <img src="../images/singularity_mpi.png" border="0"/>
 <p>
 ... and considering the following command:
-<pre>
+<pre class="padPre">
 $ mpirun -np X singularity exec /path/to/container.img /usr/bin/mpi_program_inside_container
 </pre>
 The work-flow is defined as follows:

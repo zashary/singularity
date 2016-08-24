@@ -342,7 +342,7 @@ Yes, Docker has the ability to export the data of a particular container
 and Singularity has the ability to import using the same format that Docker
 exports. In a nutshell, it is as easy as:
 </p>
-<pre>
+<pre class="padPre">
 $ docker export [container name] | sudo singularity import /path/to/container.img
 </pre>
 </div>
@@ -440,7 +440,7 @@ Singularity container.
 With Singularity, the MPI usage model is to call 'mpirun' from outside the
 container, and reference the container from your 'mpirun' command. Usage would
 look like this:
-<pre>
+<pre class="padPre">
 $ mpirun -np 20 singularity exec container.img /path/to/contained_mpi_prog
 </pre>
 </p>
@@ -583,7 +583,7 @@ Thanks Jason!
 To run Singularity on a GRSecurity enabled kernel, you must disable several
 security features:
 
-<pre>
+<pre class="padPre">
 $ sudo sysctl -w kernel.grsecurity.chroot_caps=0
 $ sudo sysctl -w kernel.grsecurity.chroot_deny_mount=0
 $ sudo sysctl -w kernel.grsecurity.chroot_deny_chmod=0
@@ -600,7 +600,7 @@ $ sudo sysctl -w kernel.grsecurity.chroot_deny_fchdir=0
 <p>
 This fix solves the following error when Singularity is installed into the
 default compiled prefix of /usr/local:
-<pre>
+<pre class="padPre">
 $ sudo singularity create /tmp/centos.img
 sudo: singularity: command not found
 </pre>
@@ -616,7 +616,7 @@ To add /usr/local/bin to the default sudo search path, run the program
 <b>visudo</b> which will edit the sudoers file, and search for the
 string 'secure_path'. Once found, append <b>:/usr/local/bin</b> to that
 line so it looks like this:
-<pre>
+<pre class="padPre">
 Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
 </pre>
 </p>

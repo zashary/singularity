@@ -6823,9 +6823,6 @@ header {
 .background {
     background: rgba(51, 51, 51, .90);
 }
-#demonstration {
-    margin: 2%;
-}
 .dpdiv {
     background: rgba(51, 51, 51, .30);
     text-shadow: 1px 1px 1px black;
@@ -6834,5 +6831,8 @@ header {
 .sec2H {
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+.padPre {
+    margin: 2%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
