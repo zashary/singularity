@@ -1109,8 +1109,7 @@ a {
 }
 a:hover,
 a:focus {
-/*please edit me*/
-  color: #830000;
+  color: grey;  
 }
 a:focus {
   outline: thin dotted;
