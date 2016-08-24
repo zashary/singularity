@@ -6817,10 +6817,14 @@ header {
     height: 300px;
     width: 300px;
 }
-.background{
+.background {
     background: rgba(51, 51, 51, .90);
 }
-#something {
-    padding: 1%;
+#demonstration {
+    margin: 2%;
+}
+.dpdiv {
+    background: rgba(51, 51, 51, .80);
+    color: white;
 }
 /*# sourceMappingURL=bootstrap.css.map */
