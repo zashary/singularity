@@ -6805,7 +6805,7 @@ header {
 .section1 {
 }
 .section2 {
-    background: rgba(51, 51, 51, 1);
+    background: rgba(19,20,20, .90);
     color: white;
 }
 .col0 {
@@ -6829,10 +6829,13 @@ header {
     color: white;
 }
 .sec2H {
-    color: white;
+    color: white !important;
     text-shadow: 1px 1px 1px black;
 }
 .padPre {
+    margin: 2%;
+}
+#youtube {
     margin: 2%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
