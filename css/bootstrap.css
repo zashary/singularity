@@ -6824,7 +6824,8 @@ header {
     margin: 2%;
 }
 .dpdiv {
-    background: rgba(51, 51, 51, .80);
+    background: rgba(51, 51, 51, .30);
+    text-shadow: 1px 1px 1px black;
     color: white;
 }
 /*# sourceMappingURL=bootstrap.css.map */
