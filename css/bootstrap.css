@@ -6798,13 +6798,10 @@ header {
    height: 60px;  
 }
 .section0 {
-/*
-    text-shadow: 2px 2px 2px black;
-*/
 }
 .section1 {
 }
-.section2 {
+.section3 {
     background: rgba(19,20,20, .90);
     color: white;
 }
