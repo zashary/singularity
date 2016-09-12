@@ -13,7 +13,7 @@ product.
 <p>
 Below is an example bootstrap file to create a minimal Debian base image:
 
-<pre class="padPre">
+<pre class="padPre text-justify">
 DistType "debian"
 MirrorURL "http://ftp.us.debian.org/debian/"
 OSVersion "jessie"
@@ -88,7 +88,7 @@ May be repeated to add multiple command lines.
 Once you have the bootstrap defined (or starting with a basic one), you can then
 use the 'bootstrap' Singularity command to install the operating system into the
 container image. The process for doing this can be seen with:
-<pre class="padPre">
+<pre class="padPre text-justify">
 $ sudo singularity bootstrap container.img debian.def 
 W: Cannot check Release signature; keyring file not available /usr/share/keyrings/debian-archive-keyring.gpg
 I: Retrieving Release 
@@ -127,7 +127,7 @@ I: Retrieving bash 4.3-11+b1
 I: Validating bash 4.3-11+b1
 </pre>
 snip....
-<pre class="padPre">
+<pre class="padPre text-justify">
 Unpacking vim-runtime (2:7.4.488-7) ...
 Selecting previously unselected package vim.
 Preparing to unpack .../vim_2%3a7.4.488-7_amd64.deb ...

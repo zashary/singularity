@@ -6826,9 +6826,14 @@ header {
     background: rgba(51, 51, 51, .90);
 }
 .dpdiv {
-    background: rgba(51, 51, 51, .30);
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    border-width: 2px;
+/*
+    background: rgba(51, 51, 51, .70);
     text-shadow: 1px 1px 1px black;
-    color: white;
+*/
+    color: black;
 }
 .sec2H {
     color: white !important;
