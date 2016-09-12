@@ -6827,8 +6827,7 @@ header {
 }
 .dpdiv {
     border-style: solid;
-    border-radius: 4px;
-    border-color: rgba(51, 51, 51, .70);
+    border-color: rgb(162, 162, 162);
     border-width: 1px;
     background: rgba(51, 51, 51, .10);
     color: black;
@@ -6847,16 +6846,5 @@ header {
     padding-left: 1%;
     padding-right: 1%;
 
-}
-.collapseBackground {
-    background: rgb(51, 51 51);
-    color: white;
-}
-[data-toggle="collapse"].collapsed .if-not-collapsed {
-        
-    }
-[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
-        color: red;
-    }
 }
 /*# sourceMappingURL=bootstrap.css.map */
