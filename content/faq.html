@@ -12,7 +12,7 @@
 <a href="#thename" data-toggle="collapse">Why the name "Singularity"?</a>
 </li>
 
-<div id="thename" class="collapse">
+<div id="thename" class="collapse dpdiv">
 <p>
 The name "Singularity" for me (Greg) stems back from my past experience
 working at a company called <a href="https://en.wikipedia.org/wiki/Linuxcare">Linuxcare</a>
@@ -31,7 +31,7 @@ emphasizes the same nomenclature. (Thanks LNX-BBC!!!)
 <li><a href="#namespaces" data-toggle="collapse">Which namespaces are virtualized? Is that select-able?</a></li>
 
 
-<div id="namespaces" class="collapse">
+<div id="namespaces" class="collapse dpdiv">
 <p>
 The goal of Singularity is to run an application within a contained
 environment such as it was not contained. Thus there is a balance between
@@ -58,7 +58,7 @@ the host system supports as well as through environment variables.
 
 <li><a href="#runc" data-toggle="collapse">Why can't you just use RunC or any other container system on a shared system?</a></li>
 
-<div id="runc" class="collapse">
+<div id="runc" class="collapse dpdiv">
 <p>
 This is a copy/paste from a discussion on the email list describing RunC Vs.
 Singularity on a shared HPC system.. But most of these tenants apply to all
@@ -94,7 +94,7 @@ Singularity on the other hand addresses these issues and more:
 
 <li><a href="#docker" data-toggle="collapse">How does Singularity relate/differ from Docker?</a></li>
 
-<div id="docker" class="collapse">
+<div id="docker" class="collapse dpdiv">
 <p>
 Docker has been used for a variety of purposes, but it is designed as a
 platform to provide replicatable, network service vitalization. Because of
@@ -121,7 +121,7 @@ Singularity</a>!
 
 <li><a href="#runc1" data-toggle="collapse">How does Singularity relate/differ from RunC?</a></li>
 
-<div id="runc1" class="collapse">
+<div id="runc1" class="collapse dpdiv">
 <p>
 This is a copy/paste from a discussion on the email list describing RunC Vs.
 Singularity on a shared HPC system.. But most of these tenants apply to all
@@ -157,7 +157,7 @@ Singularity on the other hand addresses these issues and more:
 
 <li><a href="#shifter" data-toggle="collapse">How does Singularity relate/differ from Shifter?</a></li>
 
-<div id="shifter" class="collapse">
+<div id="shifter" class="collapse dpdiv">
 <p>
 NERSC (like most HPC centers) are feeling the pressure from users asking
 for support for containers, specifically Docker. Due to the architecture
@@ -184,7 +184,7 @@ scale HPC and integration with Cray and the resource manager.
 
 <li><a href="#flatpak" data-toggle="collapse">How does Singularity relate/differ from Flatpak</a></li>
 
-<div id="flatpak" class="collapse">
+<div id="flatpak" class="collapse dpdiv">
 <p>
 Flatpak is a packaging subsystem that uses some container technologies to
 create distribution neutral packages and it is more similar to the initial
@@ -197,7 +197,7 @@ entire user's environment.
 
 <li><a href="#other-containers" data-toggle="collapse">How does Singularity relate/differ from other container systems like OpenVz, LXC/LXD, etc.?</a></li>
 
-<div id="other-containers" class="collapse">
+<div id="other-containers" class="collapse dpdiv">
 <p>
 Singularity differs from other container systems in several major ways
 that impact usability on shared systems. For example, most container
@@ -224,7 +224,7 @@ and MPI.
 
 <li><a href="#static_bin" data-toggle="collapse">How does Singularity relate/differ from statically compiled binaries?</a></li>
 
-<div id="static_bin" class="collapse">
+<div id="static_bin" class="collapse dpdiv">
 <p>
 Statically compiled binaries are a good comparison to what Singularity can do
 for a single program because it will package up all of the dynamic libraries
@@ -241,7 +241,7 @@ them into a single portable executable format.
 <li><a href="#distros" data-toggle="collapse">What Linux distributions are you trying to get on-board?</a></li>
 </ul>
 
-<div id="distros" class="collapse">
+<div id="distros" class="collapse dpdiv">
 <p>
 All of them! Help us out by letting them know you want Singularity to be
 included!
@@ -252,7 +252,7 @@ included!
 <ul class="list-unstyled">
 <li><a href="#admin" data-toggle="collapse">Do you need administrator privileges to use Singularity?</a></li>
 
-<div id="admin" class="collapse">
+<div id="admin" class="collapse dpdiv">
 <p>
 You do not need admin/sudo to use Singularity containers. You do however
 need admin/root access to install Singularity and to build/manage your
@@ -270,7 +270,7 @@ access as long as Singularity has been installed there.
 
 <li><a href="#writable" data-toggle="collapse">Can you edit/modify a Singularity container once it has been instantiated?</a></li>
 
-<div id="writable" class="collapse">
+<div id="writable" class="collapse dpdiv">
 <p>
 Yes, if you call it with the -w/--writable flag. (e.g. 'singularity shell --writable Container.img').
 </p>
@@ -279,7 +279,7 @@ Yes, if you call it with the -w/--writable flag. (e.g. 'singularity shell --writ
 
 <li><a href="#multiple_apps" data-toggle="collapse">Can multiple applications be packaged into one Singularity Container?</a></li>
 
-<div id="multiple_apps" class="collapse">
+<div id="multiple_apps" class="collapse dpdiv">
 <p>
 Yes! You can even create entire pipe lines and work flows using many
 applications, binaries, scripts, etc.. Look into the RunScript bootstrap
@@ -292,7 +292,7 @@ directly or via the 'run' command, this will get executed).
 
 <li><a href="#binds" data-toggle="collapse">How are external file systems and paths handled in a Singularity Container?</a></li>
 
-<div id="binds" class="collapse">
+<div id="binds" class="collapse dpdiv">
 <p>
 Because Singularity is based on container principals, when an application
 is run from within a Singularity container its default view of the file
@@ -316,7 +316,7 @@ Singularity will not create it for you! You must do that.
 
 <li><a href="#paths" data-toggle="collapse">What is the difference between full and relative paths?</a></li>
 
-<div id="paths" class="collapse">
+<div id="paths" class="collapse dpdiv">
 <p>
 See the above answer to "How are external file-systems and paths handled
 in a Singularity Container?".
@@ -325,7 +325,7 @@ in a Singularity Container?".
 
 <li><a href="#networking" data-toggle="collapse">How does Singularity handle manage networking?</a></li>
  
-<div id="networking" class="collapse">
+<div id="networking" class="collapse dpdiv">
 <p>
 Singularity does no network isolation because it is designed to run like any
 other application on the system. It has all of the same networking privileges
@@ -336,7 +336,7 @@ as any program running as that user.
 <li><a href="#docker-import" data-toggle="collapse">Can I import an image from Docker?</a></li>
 </ul>
 
-<div id="docker-import" class="collapse">
+<div id="docker-import" class="collapse dpdiv">
 <p>
 Yes, Docker has the ability to export the data of a particular container
 and Singularity has the ability to import using the same format that Docker
@@ -352,7 +352,7 @@ $ docker export [container name] | sudo singularity import /path/to/container.im
 <ul class="list-unstyled">
 <li><a href="#threads" data-toggle="collapse">Can a Singularity container be multi-threaded?</a></li>
 
-<div id="threads" class="collapse">
+<div id="threads" class="collapse dpdiv">
 <p>
 Yes. Singularity imposes no limitations on forks, threads or processes in
 general.
@@ -361,7 +361,7 @@ general.
 
 <li><a href="#suspend" data-toggle="collapse">Can a Singularity container be suspended or check-pointed?</a></li>
 
-<div id="suspend" class="collapse">
+<div id="suspend" class="collapse dpdiv">
 <p>
 Yes and maybe respectively. Any Singularity application can be suspended using
 standard Linux/Unix signals. Check-pointing requires some preloaded libraries
@@ -375,7 +375,7 @@ container via the specfile.
 
 <li><a href="#sched" data-toggle="collapse">Are there any special requirements to use Singularity through a job scheduler?</a></li>
 
-<div id="sched" class="collapse">
+<div id="sched" class="collapse dpdiv">
 <p>
 Singularity containers can be run via any job scheduler without any
 modifications to the scheduler configuration or architecture. This is because
@@ -387,7 +387,7 @@ other application!
 
 <li><a href="#shared_sys" data-toggle="collapse">Does Singularity work in multi-tenant HPC cluster environments?</a></li>
 
-<div id="shared_sys" class="collapse">
+<div id="shared_sys" class="collapse dpdiv">
 <p>
 Yes! HPC was one of the primary use cases in mind when Singularity was
 created.
@@ -408,7 +408,7 @@ which seamlessly interfaces with the host system and existing environments.
 
 <li><a href="#x11" data-toggle="collapse">Can I run X11 apps through Singularity?</a></li>
 
-<div id="x11" class="collapse">
+<div id="x11" class="collapse dpdiv">
 <p>
 Yes. This works exactly as you would expect it to.
 </p>
@@ -416,7 +416,7 @@ Yes. This works exactly as you would expect it to.
 
 <li><a href="#mpi-hpc" data-toggle="collapse">Can I containerize my MPI application with Singularity and run it properly on an HPC system?</a></li>
 
-<div id="mpi-hpc" class="collapse">
+<div id="mpi-hpc" class="collapse dpdiv">
 <p>
 Yes! HPC was one of the primary use cases in mind when Singularity was
 created.
@@ -435,7 +435,7 @@ Singularity container.
 
 <li><a href="#mpirun" data-toggle="collapse">Why do we call 'mpirun' from outside the container (rather then inside)?</a></li>
 
-<div id="mpirun" class="collapse">
+<div id="mpirun" class="collapse dpdiv">
 <p>
 With Singularity, the MPI usage model is to call 'mpirun' from outside the
 container, and reference the container from your 'mpirun' command. Usage would
@@ -472,7 +472,7 @@ page for more details.
 <li><a href="#gpu" data-toggle="collapse">Does Singularity support containers that require GPUs?</a></li>
 </ul>
 
-<div id="gpu" class="collapse">
+<div id="gpu" class="collapse dpdiv">
 <p>
 Yes, Singularity has been tested to run some test and diagnostic code from
 within a container without modification. There are however potential issues
@@ -487,7 +487,7 @@ compatibilities between kernel and user land which will have to be considered.
 
 <li><a href="#kernel_dependant" data-toggle="collapse">Are Singularity containers kernel dependent?</a></li>
 
-<div id="kernel_dependant" class="collapse">
+<div id="kernel_dependant" class="collapse dpdiv">
 <p>
 No, never. But sometimes yes.
 </p>
@@ -516,7 +516,7 @@ probably not the right solution for you.
 </div>
 
 <li><a href="#glibc" data-toggle="collapse">Can a Singularity container resolve GLIBC version mismatches?</a></li>
-<div id="glibc" class="collapse">
+<div id="glibc" class="collapse dpdiv">
 <p>
 Yes. Singularity containers contain their own library stack (including the
 Glibc version that they require to run).
@@ -527,7 +527,7 @@ Glibc version that they require to run).
 <li><a href="#perf" data-toggle="collapse">What is the performance trade off when running an application native or through Singularity?</a></li>
 </ul>
 
-<div id="perf" class="collapse">
+<div id="perf" class="collapse dpdiv">
 <p>
 So far we have not identified any appreciable regressions of performance (even
 in parallel applications running across nodes with InfiniBand). There is a
@@ -542,7 +542,7 @@ measured to be anywhere from 10 - 20 thousandths of a second.
 <li><a href="#security" data-toggle="collapse">Are there any special security concerns that Singularity introduces?</a></li>
 
 
-<div id="security" class="collapse">
+<div id="security" class="collapse dpdiv">
 <p>
 No and yes.
 </p>
@@ -567,7 +567,7 @@ You can read more about the
 <li><a href="#swallow" data-toggle="collapse">What is the average air speed velocity of an unladen swallow?</a></li>
 </ul>
 
-<div id="swallow" class="collapse">
+<div id="swallow" class="collapse dpdiv">
 <p>
 Thanks Jason!
 <a target="_blank" href="http://style.org/unladenswallow/">http://style.org/unladenswallow/</a>
@@ -578,7 +578,7 @@ Thanks Jason!
 <ul class="list-unstyled">
 <li><a href="#grsec" data-toggle="collapse">How to use Singularity with GRSecurity enabled kernels</a></li>
 
-<div id="grsec" class="collapse">
+<div id="grsec" class="collapse dpdiv">
 <p>
 To run Singularity on a GRSecurity enabled kernel, you must disable several
 security features:
@@ -596,7 +596,7 @@ $ sudo sysctl -w kernel.grsecurity.chroot_deny_fchdir=0
 <li><a href="#sudoerror" data-toggle="collapse">Error running Singularity with sudo</a></li>
 </ul>
 
-<div id="sudoerror" class="collapse">
+<div id="sudoerror" class="collapse dpdiv">
 <p>
 This fix solves the following error when Singularity is installed into the
 default compiled prefix of /usr/local:
