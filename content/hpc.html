@@ -27,7 +27,7 @@ Singularity). Here is a document that illustrates the Open MPI/Singularity workf
 </center>
 <p>
 From the above image you can follow the invocation pathway:
-<ol>
+<ul class="text-justify">
 <li>mpirun is called by the resource manager or the user directly from a shell</li>
 <li>Open MPI then calls the process management daemon (ORTED)</li>
 <li>The ORTED process launches the Singularity container requested by the mpirun command</li>
@@ -35,7 +35,8 @@ From the above image you can follow the invocation pathway:
 <li>Singularity then launches the MPI application within the container</li>
 <li>The MPI application launches and loads the Open MPI libraries</li>
 <li>The Open MPI libraries connect back to the ORTED process via the Process Management Interface (PMI)</li>
-</ol>
+</ul>
+</br>
 At this point the processes within the container run as they would normally directly
 on the host at full bandwidth! This entire process happens behind the scenes, and
 from the user's perspective running via MPI is as simple as just calling mpirun on
